@@ -37,7 +37,7 @@
 ---
 ## Como Executar <a id="como-executar"></a>
 > [!IMPORTANT] 
-> O microserviço [javer-api](https://github.com/barbarastefany/javer-api) permite realizar o cálculo do score de crédito com base no saldo da conta.
+> O microserviço [javer-api](https://github.com/barbarastefany/javer-api) permite realizar o cálculo do score de crédito com base no saldo da conta armazenado no banco de dados desta aplicação.
 ## Instruções de execução:
 1. Clone o repositório:
 ```
