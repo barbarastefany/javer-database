@@ -36,10 +36,8 @@
   
 ---
 ## Como Executar <a id="como-executar"></a>
-> [!IMPORTANT]
-> Este microserviço apenas persiste dados.
-> 
-> Para realizar as requisições REST você deve ter em execução o microserviço [javer-api](https://github.com/barbarastefany/javer-api).
+> [!IMPORTANT] 
+> Utilize o microserviço [javer-api](https://github.com/barbarastefany/javer-api) para realizar requisições REST.
 ## Instruções de execução:
 1. Clone o repositório:
 ```
