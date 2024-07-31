@@ -64,4 +64,4 @@ http://localhost:8080/swagger-ui/index.html
 
 ---
 ## Licença
-Este projeto está licenciado sob a MIT License.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
