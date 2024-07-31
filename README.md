@@ -37,7 +37,7 @@
 ---
 ## Como Executar <a id="como-executar"></a>
 > [!IMPORTANT] 
-> Utilize o microserviço [javer-api](https://github.com/barbarastefany/javer-api) para realizar a requisição do cálculo do score de crédito.
+> O microserviço [javer-api](https://github.com/barbarastefany/javer-api) permite realizar uma requisição para cálculo de score de crédito.
 ## Instruções de execução:
 1. Clone o repositório:
 ```
