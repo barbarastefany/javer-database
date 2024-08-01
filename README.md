@@ -12,28 +12,24 @@
 
 ---
 ## Índice
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Dependências](#dependências)
+- [Tecnologias/Dependências Utilizadas](#tecnologias-utilizadas)
 - [Como Executar](#como-executar)
 - [Documentação da API](#documentação-da-api)
 - [Autoria](#autoria)
 - [Licença](#licença)
 
 ---
-## Tecnologias Utilizadas <a id="tecnologias-utilizadas"></a>
+## Tecnologias/Dependências Utilizadas <a id="tecnologias-utilizadas"></a>
 - **JDK 22**
 - **Spring Boot 3.3.2**
-- **Maven**
-- **Docker Compose**
-
----
-## Dependências <a id="dependências"></a>
 - **Springboot JPA**
 - **Springboot WEB**
 - **Springboot Test**
+- **Maven**
+- **Lombok**
 - **MySQL Driver**
 - **Docker Compose**
-- **Lombok**
+
   
 ---
 ## Como Executar <a id="como-executar"></a>
