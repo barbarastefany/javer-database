@@ -15,7 +15,7 @@
 - [Dependências](#dependências)
 - [Como Executar](#como-executar)
 - [Documentação da API](#documentação-da-api)
-- [Autores](#autores)
+- [Autoria](#autoria)
 - [Licença](#licença)
 
 ---
@@ -57,7 +57,7 @@ A documentação da API está disponível através do Swagger UI em:
 http://localhost:8080/swagger-ui/index.html
 ```
 ---
-## Autores
+## Autoria
 [Barbara Carvalho](https://github.com/barbarastefany)
 
 ---
