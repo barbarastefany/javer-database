@@ -12,14 +12,14 @@
 
 ---
 ## Índice
-- [Tecnologias/Dependências Utilizadas](#tecnologias-utilizadas)
+- [Tecnologias e Dependências Utilizadas](#tecnologias-utilizadas)
 - [Como Executar](#como-executar)
 - [Documentação da API](#documentação-da-api)
 - [Autoria](#autoria)
 - [Licença](#licença)
 
 ---
-## Tecnologias/Dependências Utilizadas <a id="tecnologias-utilizadas"></a>
+## Tecnologias e Dependências Utilizadas <a id="tecnologias-utilizadas"></a>
 - **JDK 22**
 - **Spring Boot 3.3.2**
 - **Springboot JPA**
