@@ -8,8 +8,6 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Data
@@ -47,5 +45,8 @@ public class Cliente {
         this.saldoCc = saldoCc;
         this.creationTimestamp = creationTimestamp;
         this.updateTimestamp = updateTimestamp;
+    }
+
+    public Cliente(String nome, Long telefone, Float saldoCc) {
     }
 }
