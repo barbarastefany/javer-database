@@ -5,10 +5,12 @@ import com.javerbank.javer_database.controller.dto.CriarClienteDto;
 import com.javerbank.javer_database.entity.Cliente;
 import com.javerbank.javer_database.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
-@RequestMapping("/cliente")
 public class ClienteController {
 
     @Autowired
@@ -27,7 +29,7 @@ public class ClienteController {
     }
 
     @GetMapping
-    public Iterable<Cliente> listar() {
+    public List<Cliente> listar() {
         return clienteService.listarClientes();
     }
 
@@ -42,7 +44,9 @@ public class ClienteController {
     }
 
     @DeleteMapping("/{id}")
-    public void excluir(@PathVariable Long id) {
+    public ResponseEntity<Void> excluir(@PathVariable Long id) {
         clienteService.deletarCliente(id);
+        return ResponseEntity.ok().build();
     }
-    }
+
+}
