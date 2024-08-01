@@ -23,7 +23,7 @@
 - **JDK 22**
 - **Spring Boot 3.3.2**
 - **Maven**
-- **Docker**
+- **Docker Compose**
 
 ---
 ## Dependências <a id="dependências"></a>
