@@ -5,7 +5,7 @@
   <img src="https://i.imgur.com/aN921yZ.png" alt="Lombok" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" width="40" height="40"/>
----
+  <br>
   <h1>Javer Database</h1>
   <p>Um microserviço construído em springboot que persiste dados e realiza operações CRUD de requisições REST recebidas do microserviço <a href="https://github.com/barbarastefany/javer-api">javer-api</a>.</p>
 </div>
@@ -24,7 +24,7 @@
 
 ---
 ## Como Executar <a id="como-executar"></a>
-> [!IMPORTANT]
+> **ATENÇÃO:**
 > O microserviço [javer-api](https://github.com/barbarastefany/javer-api) permite realizar o cálculo do score de crédito com base no saldo da conta armazenado no banco de dados desta aplicação.
 ## Instruções de execução:
 1. Clone o repositório:
