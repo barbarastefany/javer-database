@@ -33,7 +33,7 @@ git clone https://github.com/barbarastefany/javer-database
 ```
 2. Importe a aplicação para a sua IDE
 3. Esteja com o Docker Desktop em execução para que o contêiner do banco de dados seja criado
-4. Execute a classe main:
+4. Execute a classe main
 ```
 JaverDatabaseApplication
 ```
