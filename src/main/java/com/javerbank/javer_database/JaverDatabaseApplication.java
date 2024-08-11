@@ -13,9 +13,4 @@ public class JaverDatabaseApplication {
 		SpringApplication.run(JaverDatabaseApplication.class, args);
 	}
 
-	@PostConstruct
-	void started() {
-		TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
-
-	}
 }
