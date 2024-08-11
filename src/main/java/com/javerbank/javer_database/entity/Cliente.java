@@ -1,5 +1,6 @@
 package com.javerbank.javer_database.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -31,6 +32,10 @@ public class Cliente {
 
     @Column(name = "saldo_cc")
     private Float saldoCc;
+
+    @Transient
+    @JsonIgnore
+    private Float limiteCredito;
 
     @CreationTimestamp
     private Instant creationTimestamp;
