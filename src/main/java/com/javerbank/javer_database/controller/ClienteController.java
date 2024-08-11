@@ -49,7 +49,7 @@ public class ClienteController {
     @DeleteMapping("/{clienteId}")
     public ResponseEntity<Void> excluir(@PathVariable Long clienteId) {
         clienteService.deletarCliente(clienteId);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.noContent().build();
     }
 
     @GetMapping("/{clienteId}/limite-credito")
