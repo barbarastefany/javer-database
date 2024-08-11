@@ -3,6 +3,7 @@ package com.javerbank.javer_database.controller;
 import com.javerbank.javer_database.controller.dto.AtualizarClienteDto;
 import com.javerbank.javer_database.controller.dto.CriarClienteDto;
 import com.javerbank.javer_database.entity.Cliente;
+import com.javerbank.javer_database.repository.ClienteRepository;
 import com.javerbank.javer_database.service.ClienteService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
@@ -17,6 +18,7 @@ import org.springframework.http.ResponseEntity;
 import java.time.Instant;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -27,6 +29,9 @@ class ClienteControllerTest {
 
     @Mock
     private ClienteService clienteService;
+
+    @Mock
+    private ClienteRepository clienteRepository;
 
     @InjectMocks
     private ClienteController clienteController;
@@ -83,7 +88,7 @@ class ClienteControllerTest {
     class DeveRetornarUmaListaDeClientes {
 
         @Test
-        @DisplayName("Deve retornar uma lista de clientes CASO existam clientes para serem retornados")
+        @DisplayName("Deve retornar uma lista de clientes.")
         void deveRetornarUmaListaDeClientes() {
 
             // Arrange
@@ -121,13 +126,6 @@ class ClienteControllerTest {
             // Arrange
             Long clienteId = 1L;
             Cliente clienteEsperado = new Cliente(
-                    1L,
-                    "Pedro",
-                    123456789L,
-                    true,
-                    2000F,
-                    Instant.now(),
-                    null
             );
 
             when(clienteController.getById(clienteId)).thenReturn(clienteEsperado);
@@ -181,7 +179,7 @@ class ClienteControllerTest {
             ResponseEntity<Void> response = clienteController.excluir(clienteId);
 
             // Assert
-            assertEquals(HttpStatus.OK, response.getStatusCode());
+            assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
         }
     }
 }
