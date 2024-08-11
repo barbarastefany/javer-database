@@ -55,9 +55,14 @@ public class ClienteController {
     @GetMapping("/{clienteId}/limite-credito")
     public ResponseEntity<String> getLimiteCredito(@PathVariable Long clienteId) {
         Float limiteCredito = clienteService.calcularLimiteCredito(clienteId);
-        if (limiteCredito != null && limiteCredito >= 0.0f) {
-            String mensagem = "O limite de crédito disponível para o cliente "+clienteId+" é de: "+limiteCredito;
-            return ResponseEntity.ok(mensagem);
+        if (limiteCredito != null) {
+            if (limiteCredito > 0.0f) {
+                String mensagemComLimite = "O limite de crédito disponível para o cliente "+clienteId+" é de: "+limiteCredito;
+                return ResponseEntity.ok(mensagemComLimite);
+            } else {
+                String mensagemSemLimite = "O cliente "+clienteId+" não possui limite de crédito disponível.";
+                return ResponseEntity.status(HttpStatus.OK).body(mensagemSemLimite);
+            }
         } else {
             String mensagemErro = "O cliente "+clienteId+" não foi encontrado na base de dados.";
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(mensagemErro);
