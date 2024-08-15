@@ -12,5 +12,4 @@ public class JaverDatabaseApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(JaverDatabaseApplication.class, args);
 	}
-
 }
