@@ -12,7 +12,7 @@
 
 ---
 ## Tecnologias e Dependências Utilizadas <a id="tecnologias-utilizadas"></a>
-- **JDK 22**
+- **JDK 17**
 - **Spring Boot 3.3.2**
 - **Springboot JPA**
 - **Springboot WEB**
